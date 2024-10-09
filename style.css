@@ -346,6 +346,9 @@ overflow-x: hidden;
     height: 308px;
     width: 308px;
 }
+.secgridimg:hover{
+    cursor: pointer;
+}
 @media(max-width:770px){
     .secgridimg{
         height: 200px;
@@ -360,7 +363,7 @@ overflow-x: hidden;
     }
 }
 .thirdpage{
-    background-color: rgb(183, 200, 200);
+    /* background-color: rgb(183, 200, 200); */
     height: auto;
     width: 100%;
     /* display:flex ; */
@@ -401,7 +404,7 @@ overflow-x: hidden;
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: rgb(186, 203, 203);
+    /* background-color: rgb(186, 203, 203); */
 }
 .viewalllink{
     text-decoration: none;
@@ -413,7 +416,7 @@ overflow-x: hidden;
 .thirdpage2{
     height: 282px;
     width: 100%;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
 }
