@@ -9,9 +9,9 @@ overflow-x: hidden;
 .firstnav{
     background-color: rgb(11, 9, 9);
     display: flex; 
-    justify-content: end    ;            
+    justify-content: end;            
     height: 36px;
-    width: 100%;            
+    width: 100%px;            
 }
 .sonydiv{
     height: 36px;
@@ -24,17 +24,29 @@ overflow-x: hidden;
 .secnav{
     height: 40px;
     width: 1440px;
-    /* background-color: aqua; */
+    background-color: aqua;
     display: flex;
     justify-content: space-around;
 }
+@media(max-width:770px){
+    .secnav{
+        width: 740px;
 
+    }
+}
 .secchilddiv{
     height: 40px;
-    width: 1440px;
+    width: 100%;
     /* background-color:rgb(48, 215, 120); */
     display: grid;
     grid-template-columns:650px 820px 50px ;
+}
+@media(max-width:770px)
+{
+    .secchilddiv{
+    grid-template-columns:600px 120px 45px ;
+
+    }
 }
 .secchilddiv1 ul{
     margin: 0px;
@@ -81,7 +93,7 @@ overflow-x: hidden;
     color:rgb(22, 115, 196);
 }
 .secchilddiv2{
-    /* background-color: burlywood; */
+    background-color: burlywood;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -105,15 +117,22 @@ overflow-x: hidden;
 .signin:hover{
     background-color: rgb(17, 89, 144);
 }
+/* @media(max-width:770px){
+    .secchilddiv2{
+        width: 300px;
+        margin-right: 0px;
+    }
+} */
 .secchilddiv3{  
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 .searchbutton{
     width: 21px;
     cursor: pointer;
 }
+
 .thirdnav{
     height: 64px;
     width: 100%;
@@ -202,6 +221,11 @@ overflow-x: hidden;
 .offer{
     width: 1536px;
 }
+@media(max-width:770px){
+    .offer{
+        width: 768px;
+    }
+}
 .firstpagefooter{
     margin-top: -5px;
     height: 100px;
@@ -276,25 +300,67 @@ overflow-x: hidden;
 .secpagediv{
     background-color: rgb(255, 255, 255);
     height:648px ;
-    width:1296 ;
+    width:1296px ;
     display: grid;
     /* border: 1px solid black; */
     grid-template-columns: 308px 308px 308px 308px;
     grid-template-rows: 308px 308px;
     gap: 15px;
 }
+@media(max-width:770px){
+    .secpagediv{
+        max-width: 770px;
+        grid-template-columns: 50px 50px 50px ;
+        grid-template-rows: 50px 50px 50px;
+        margin-left: 20px ;
+        gap:200px;
+    }
+
+}
+@media(max-width:770px){
+    #blank{
+        display: none;
+    }
+}
+
 .secchildgrid{
     /* border: 1px solid black; */
     height: 308px;
     width: 308px;
+}
+/* @media(max-width:770px){
+    .secgridimg{
+        height: 250px;
+        width: 250px;
+    }
+} */
+@media(max-width:770px){
+ 
+    .secchildgrid{
+        height: 250px;
+        width: 250px; 
+    }
 }
 .secgridimg{
     border-radius: 10px;
     height: 308px;
     width: 308px;
 }
+@media(max-width:770px){
+    .secgridimg{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media(max-width:770px){
+ 
+    .secchildgrid{
+        height: 150px;
+        width: 150px; 
+    }
+}
 .thirdpage{
-    /* background-color: aqua; */
+    background-color: rgb(183, 200, 200);
     height: auto;
     width: 100%;
     /* display:flex ; */
@@ -305,6 +371,11 @@ overflow-x: hidden;
     display: flex;
     justify-content:center ;
 }
+@media(max-width:770px){
+    .thirdpage1{
+        width: 770px;
+    }
+}
 .thirdpagediv1{
     height: 32.5px;
     /* background-color: blue; */
@@ -312,6 +383,11 @@ overflow-x: hidden;
     display: grid;
     grid-template-columns: 1180px 100px;
     
+}
+@media(max-width:770px){
+    .thirdpagediv1{
+        width: 750px;
+    }
 }
 .thirdpagecont{
     color: #363636e2;
@@ -325,7 +401,7 @@ overflow-x: hidden;
     display: flex;
     justify-content: end;
     align-items: center;
-    /* background-color: rgb(186, 203, 203); */
+    background-color: rgb(186, 203, 203);
 }
 .viewalllink{
     text-decoration: none;
@@ -337,7 +413,7 @@ overflow-x: hidden;
 .thirdpage2{
     height: 282px;
     width: 100%;
-    /* background-color: bisque; */
+    background-color: bisque;
     display: flex;
     justify-content: center;
 }
